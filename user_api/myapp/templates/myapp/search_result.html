@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html' %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+{% block content %}
+Search Results with below filters <br>
+<hr>
+{% if username %}
+Username: {{username}} <br>
+{% endif %}
+{% if email %}
+Email Containing: {{email}} <br>
+{% endif %}
+{% if created_date %}
+Date: {{created_date}} <br>
+{% endif %}
+<hr>
+{% if list_user %}
+<p>List of Users</p>
+
+{% for user in list_user %}
+<div style="display:block;border:1px solid black;width:30%;padding:5px;background;margin-bottom:5px;">
+    <b>{{user.username}}</b><br>
+    <b>{{user.email}}</b>
+</div>
+{% endfor %}
+{% else %}
+<p>No Users found</p>
+{% endif %}
+<button><a href="/">Home</a></button>
+{% endblock %}
+</body>
+</html>

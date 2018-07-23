@@ -1,0 +1,110 @@
+.fa {
+			  padding: 20px;
+			  font-size: 30px;
+			  width: 50px;
+			  text-align: center;
+			  text-decoration: none;
+			  margin: 5px 2px;
+			  height: 20px;
+			}
+		.fa:hover {
+			opacity: 0.7;
+			}
+			
+		.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+        .col-1-12{
+            width: 8.33%;
+        }
+        .col-11-12{
+            width: 91.66%;
+        }
+        .row{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+        .ul2{
+            background-color: #fff;
+            border-radius: 0 0 2px 2px;
+            border-top: 1px solid #e0e0e0;
+            box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.5);
+            color: #000;
+            display: none;
+            position: absolute;
+            top: 39px;
+            z-index: 9;
+        }
+        .svg1{
+            fill: #212121;
+        }
+        .button1{
+            background-color: #ffe11b;
+            border: 1px solid #ffe11b;
+            border-radius: 0 2px 2px 0;
+            color: #565656;
+            cursor: pointer;
+            height: 40px;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .row3{
+            display: inline;
+            position: relative;
+            width: 100%;
+        }
+        .form1{
+            border-radius: 0 2px 2px 0;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+        }
+        .unList{
+            right:16px;position:absolute;font-size:13px;
+        }
+        .row1{
+            display: inline-block;
+            margin-top: 2px;
+            text-align: right;
+            width: 150px;
+        }
+        .row2{
+            display: inline-block;
+            height: 50px;
+            margin-top: 5px;
+            min-width: 676px;
+            padding-left: 10px;
+            padding-right: 10px;
+            vertical-align: top;
+            width: calc(100% - 280px);
+            }
+        .list{
+            display:inline-block;
+            position:relative;
+            padding:0px 5px;
+        }
+        .list a{
+            color:#FFF;
+            text-decoration:none;
+        }
+        .inp{
+            padding: 11px 16px;
+            border-radius: 2px 0 0 2px;
+            border: 0 none;
+            outline: 0 none;
+            font-size: 15px;
+            width: 30%;
+        }
+        .input1{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            background-color: #2874f0;
+            margin: 0 auto;
+            max-width: 1248px;
+            min-width: 978px;
+            padding: 0 16px;
+        }

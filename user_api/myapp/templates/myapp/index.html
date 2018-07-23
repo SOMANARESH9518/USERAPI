@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html' %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My App Home Page</title>
+</head>
+<body>
+{% block content %}
+
+
+{% if list_user %}
+    <p>List of Users</p>
+
+        {% for user in list_user %}
+            <div style="display:block;border:1px solid black;width:30%;padding:5px;background;margin-bottom:5px;">
+                <b>{{user.username}}</b><br>
+                <b>{{user.email}}</b>
+            </div>
+        {% endfor %}
+{% else %}
+    <p>No Users found</p>
+{% endif %}
+<br>
+<u><h3>Users Count:</h3></u>
+Day Count = {{ day_count }}<br>
+Week Count = {{ week_count }}<br>
+Month Count = {{ month_count }}<br>
+Total Visits = {{ total_visits }}
+{% endblock %}
+</body>
+</html>

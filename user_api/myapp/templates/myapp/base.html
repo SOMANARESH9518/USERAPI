@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Facebook Home Page</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap-theme.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.js' %}"/>
+    <link rel="stylesheet" href="/static/css/registration.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="heading"
+     style="position:fixed;width:100%;z-index:10;will-change:transform;background-color: #2874f0;top:0px;left:0px;">
+
+    <div class="input1">
+        <div class="row">
+            <div class="row2">
+                <form class="form1 header-form-search" action="/search" method="GET" data-reactid="37">
+                    <div class="row" data-reactid="38">
+                        <div class="col-lg-11" data-reactid="39">
+                            <div class="row3" data-reactid="40">
+                                <input class="inp" value="" title="User Name" name="username"
+                                       autocomplete="off" placeholder="User Name"
+                                       data-reactid="41" type="text">
+                            </div>
+                            <div class="row3" data-reactid="40">
+                                <input class="inp" value="" title="email" name="email"
+                                       autocomplete="off" placeholder="Email"
+                                       data-reactid="41" type="text">
+                            </div>
+                            <div class="row3" data-reactid="40">
+                                <input class="inp" value="" title="date" name="created_date"
+                                       autocomplete="off" placeholder="Date"
+                                       data-reactid="41" type="date">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1" data-reactid="42">
+                            <button class="button1" type="submit" data-reactid="43">
+                                <svg class="svg1" width="15px" height="15px" xmlns="http://www.w3.org/2000/svg"
+                                     data-reactid="44">
+                                    <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467"
+                                          data-reactid="45">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="col-11-12 ul2" data-reactid="49"></ul>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<button><a href="/" target="_blank">Home</a></button>
+<br><br><br><br><br>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
