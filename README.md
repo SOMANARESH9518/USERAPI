@@ -15,6 +15,7 @@ http://127.0.0.1:8000/api2/api_user/id/
 <br>
 List the Particular User with the id
 
+<p>Before Starting the App, you have to clear the data from visits.pickle which will clear the local cache of NBR_VISITS(total visits of home link till now)</p>
 
 In the home, you can find a Search bar with options username,email,date.
 
